@@ -12,10 +12,14 @@ const Nav = () => {
           ></path>
         </svg>
         <ul>
-          <li>Home</li>
+          <li className="active">Home</li>
           <li>Search</li>
           <li>Your library</li>
         </ul>
+        <div className="cookies">
+          <span>Cookies</span>
+          <span>Privacy</span>
+        </div>
       </div>
     </div>
   );
