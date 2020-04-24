@@ -4,6 +4,22 @@ $greyLighter: #282828;
 $greyText: #b3b3b3;
 $greyNav: #090909;
 
+@font-face {
+  font-family: circular-book;
+  src: url(./fonts/CircularStd-Book.otf);
+}
+@font-face {
+  font-family: circular-bold;
+  src: url(./fonts/CircularStd-Bold.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: circular-book;
+}
+
 .App {
   height: calc(100%);
   background: $greyLight;
@@ -101,9 +117,10 @@ $greyNav: #090909;
   .card {
     background: $greyLighter;
     border-radius: 10px;
-    width: 180px;
+    width: 190px;
     overflow: hidden;
     padding: 1.2rem;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
     .cardImage {
       height: 160px;
       box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3),
