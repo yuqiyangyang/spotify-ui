@@ -99,29 +99,37 @@ body {
   position: relative;
   z-index: 2;
 }
+.upperNav {
+  background: rgba(9, 9, 9, 0.78);
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
 
 .main {
   width: 100%;
+  overflow-y: scroll;
+  padding-top: 3.4rem;
+  position: relative;
 
-  .upperNav {
-    background: $greyNav;
-    height: 56px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 0.5rem 2rem;
-  }
   .mainContent {
     color: white;
     padding: 0.5rem 2rem;
-    h1 {
+    h1,
+    h2 {
       font-size: 1.8rem;
     }
   }
 }
 
 .cardWrap {
+  padding-bottom: 1.8rem;
   .card {
     background: $greyLighter;
     border-radius: 10px;
